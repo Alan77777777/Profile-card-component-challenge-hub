@@ -1,0 +1,126 @@
+:root {
+    /*### Primary*/
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    /*### Neutral*/
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 20px;
+    background-color: var(--dark-cyan);
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat no-repeat;
+    background-position: right 55vw bottom 65vh, left 50vw top 40vh;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 4rem;
+    border-radius: 15px;
+    box-shadow: 0px 20px 50px 20px rgba(0, 0, 0, 0.30);
+}
+
+.container img {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.container .sub-container .background {
+    width: 350;
+    height: 140;
+    background-image: url(/images/bg-pattern-card.svg);
+    border-radius: 15px 15px 0px 0px;
+}
+
+.container .sub-container {
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 0rem;
+    margin-bottom: 5rem;
+}
+
+.container .starter {
+    text-align: center;
+    padding-bottom: 1.6rem;
+    border-bottom: 2px hsl(0, 0%, 59%, 10%) solid;
+}
+
+.container .starter img {
+    border-radius: 50%;
+    border: solid white 4px;
+    margin-bottom: 1.3rem;
+    width: 100px;
+    height: 100px;
+    margin-top: -52px;
+}
+
+.container .starter h1 {
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.container .starter h1 span {
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+    font-size: 22px;
+    padding-left: 0.4rem;
+}
+
+.container .starter p {
+    margin-top: 0.6rem;
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.container .bottom-list {
+    padding: 1rem;
+}
+
+.container .bottom-list ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0.5rem 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--dark-gray);
+}
+
+.container .bottom-list ul li .numbers {
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: var(--very-dark-desaturated-blue)
+}
+
+.container .bottom-list ul li .description {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+@media(min-width: 500px) {
+    .container {
+        width: 410px;
+        margin: 10rem auto 1rem;
+    }
+}
